@@ -27,3 +27,12 @@ API_KEY=**************************
 - `npm run build-prod` to generate the distribution folder.
 - `node src/node src/server/index.js` to start the express server.
 - The production mode web app can be accessed at `localhost:8081`
+
+### 2. Development Mode
+- `npm run build-dev` to start the webpack dev server.
+- The development mode web app can be accessed at `localhost:8080`
+
+**Note: To successfuly run and test development mode, express server should be running.**
+
+### 3. Testing
+- `npm run test` to run Jest & test all test cases.
