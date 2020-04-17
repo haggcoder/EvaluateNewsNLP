@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Evaluate News Articles with Natural Language Processing</h1>
+        </header>
+
+        <main>
+            <section>
+                <form class="" onsubmit="return handleSubmit(event)">
+                    <input id="name" type="text" name="input" value="" placeholder="Name">
+                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                </form>
+            <section>
+
+            <section>
+                <strong>Results:</strong>
+                <div id="Polarity"></div>
+                <div id="Subjectivity"></div>
+                <div id="PolarityConfidence"></div>
+                <div id="SubjectivityConfidence"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Himanshu Aggarwal</p>
+        </footer>
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>
